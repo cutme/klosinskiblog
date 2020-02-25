@@ -14,9 +14,12 @@ document.addEventListener('DOMContentLoaded',function() {
         
         
         setTimeout(function() {
-            cover.remove();
             document.body.classList.add('is-loaded');
         }, 250);
+        
+        setTimeout(function() {
+            cover.remove();
+        }, 500);
         
 
         // Carousels 
