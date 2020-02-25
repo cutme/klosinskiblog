@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         let down,
         	lastScrollTop = 0,
-        	narrow = false,
+        	fixed = false,
         	ww = window.innerWidth;
         
         const action = function() {
@@ -16,14 +16,17 @@ document.addEventListener('DOMContentLoaded', function() {
             ww = window.innerWidth;
 
             if (scroll_pos >= 94) {
-    	            
-                el.classList.add('is-fixed');
-                fixed = true;
+    	        if (fixed === false) {
+                    el.classList.add('is-fixed');
+                    fixed = true;
+                }
             }
                         
             else {
-	            el.classList.remove('is-fixed');
-	            fixed = false;
+                if (fixed === true) {
+    	            el.classList.remove('is-fixed');
+    	            fixed = false;
+    	        }
             }
         };
         
