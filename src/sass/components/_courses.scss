@@ -1,0 +1,28 @@
+.c-courses {
+    padding-top: 160px;
+    
+    .o-article {
+        margin: 48px 0;
+    }
+    
+    .o-cols {
+        margin: 48px 0 96px 0;
+    }
+    
+    .o-header {
+        margin-bottom: 232px;
+    }
+
+    .o-lead {
+        &--6 {
+            margin-bottom: 32px;
+        }
+    }
+
+    .title {
+        line-height: 28px;
+        font-size: rem(26);
+    }
+}
+
+

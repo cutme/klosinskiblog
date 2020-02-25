@@ -1,0 +1,43 @@
+.c-newsletter {
+    
+    &__img {
+        transform: translateY(50%);
+    }
+    
+    .o-section {
+        padding-bottom: 0;
+    }
+    
+    &__form {
+        input[type=text],
+        input[type=email] {
+            background-color: transparent;
+            border-bottom: 1px solid $c-black-01;
+            height: 48px;
+            margin-bottom: 32px;
+        }
+        
+        label {
+            @extend %lead;
+            @extend %lead--6;
+        }
+        
+        .o-btn {
+            margin-top: 40px;
+        }
+        
+        .o-cols {
+            @extend %flex-end;
+
+            &__item {
+                &:first-of-type {
+                    padding-bottom: 160px;
+                }
+                
+                &:last-of-type {
+                    padding-left: 56px;
+                }
+            }
+        }
+    }
+}

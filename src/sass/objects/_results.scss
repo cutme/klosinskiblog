@@ -1,0 +1,25 @@
+.o-results {
+
+    dl {
+        @extend %flex;
+    }
+    
+    dt {
+        @extend %flex;
+        width: 200px;
+        
+        [class^="icon-"] {
+            
+            margin-right: 8px;
+        }
+    }
+    
+    dd {
+        width: 570px;
+    }
+    
+    &__item {
+        display: block;
+        margin-bottom: 144px;
+    }
+}

@@ -1,0 +1,34 @@
+.c-book {
+    
+    .o-article {
+        margin-bottom: 32px;
+    }
+    
+    .o-section {
+        padding-bottom: 0;
+    }
+
+    &__grid {
+        @extend %flex;
+        @extend %flex-spacebetween;
+        @extend %flex-wrap;
+        margin: -32px 0 -160px 0;
+        
+        .col {
+            img {
+                &:not(:last-of-type) {
+                    margin-bottom: 32px;
+                }
+            }
+        }
+    }
+    
+    .o-cols {
+        
+        &__item {
+            &:first-of-type {
+                padding-right: 160px;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.c-top {
+	@include z-index(top);
+	@extend %abs;
+	left: 0; top: 0;
+    width: 100%;
+	background-color: white;
+	height: 320px;
+    padding: {
+        top: 112px;
+    	bottom: 160px;
+    }
+    
+    .o-logo {
+        @extend %abs;
+        @extend %abs-xy;
+    }
+    
+    .o-social {
+        margin: 0 0 0 auto;
+    }
+    
+    .o-wrap {
+        @extend %rel;
+        @extend %flex;
+    }
+    
+    &.is-fixed {
+        position: fixed;
+        border-bottom: 1px solid $c-gray-01;
+        height: 86px;
+        padding: 0;
+        //transform: translate3d(0, -100%, 0);
+
+        .o-wrap {
+            @extend %flex-y;
+            height: 100%;
+        }
+    }
+}

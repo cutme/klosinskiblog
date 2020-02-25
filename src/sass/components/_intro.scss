@@ -1,0 +1,30 @@
+.c-intro {
+    margin-bottom: -160px;
+    overflow: hidden;
+
+    h2 {
+        @extend %lead;
+        @extend %lead--1;
+        margin-bottom: .8em;
+    }
+    
+    .o-article {
+        margin-bottom: 130px;
+        
+        p {
+            font-weight: $regular;
+        }
+    }
+    
+    .o-cols {
+        &__item {
+            &:last-of-type {
+                padding: 56px 0 0 56px;
+                
+                img {
+                    max-width: none;
+                }
+            }
+        }
+    }    
+}

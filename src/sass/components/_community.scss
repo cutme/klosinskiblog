@@ -1,0 +1,39 @@
+.c-community {
+    
+    .o-box {
+        border: 1px solid $c-gray-01;
+        margin-bottom: 32px;
+        padding: 32px 32px 48px 32px;
+        
+        .author {
+            @extend %flex;
+            @extend %flex-y;
+            margin-bottom: 32px;
+
+            img {
+                margin-right: 32px;
+                border-radius: 50%;
+            }
+        }
+        
+        .review {
+            font-size: rem(16);
+            line-height: 1.5em;
+        }
+    }
+    
+    .o-header {
+        margin-bottom: 120px;
+    }
+    
+    .o-cols--3 {
+        .o-cols {
+            &__item {
+                &:nth-of-type(odd) {
+                    padding-top: 112px;
+                }
+            }
+        }
+    }
+    
+}

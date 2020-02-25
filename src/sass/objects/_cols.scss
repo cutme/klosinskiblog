@@ -1,0 +1,43 @@
+.o-cols {
+    @extend %flex;
+	width: 100%;
+    
+    &--2 {
+        @extend %flex-spacebetween;
+
+        .o-cols__item {
+            width: grid(570, $base);
+        }
+    }
+    
+    &--2f {
+        justify-content: flex-start;
+        
+        .o-cols__item { 
+            
+            &:first-of-type {
+                width: grid(570, $base);
+            }
+            
+            &:last-of-type {
+                flex: 1;
+            }
+        }
+    }
+    
+    &--3 {
+        @extend %flex-spacebetween;
+
+        .o-cols__item {
+            width: grid(368, $base);
+        }
+    }
+
+/*
+    &__item {
+        @extend %rel;
+    }
+*/
+    
+}
+

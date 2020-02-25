@@ -1,0 +1,26 @@
+.c-navfooter {
+    text-align: center;
+
+    ul {
+        @extend %flex;
+        @extend %flex-x;
+        margin-bottom: 72px;
+
+        li {
+            padding: 0 16px;
+
+            a {
+                @extend %lead;
+                @extend %lead--6;
+                display: block;
+                letter-spacing: .5px;
+                
+                &:hover {
+                    .desktop & {
+                        transform: translate3d(0, -5px, 0);
+                    }
+                }
+            }
+        }
+    }
+}

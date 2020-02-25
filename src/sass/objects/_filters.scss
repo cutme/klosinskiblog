@@ -1,0 +1,30 @@
+.o-filters {
+
+    [class^="icon-"] {
+        margin-right: 15px;
+    }
+
+    li {
+        a {
+            @extend %flex-inline;
+            @extend %flex-xy;
+            height: 42px;
+            border-radius: 21px;
+            padding: 0 32px 0 8px;
+            margin: 0 0 8px -8px;
+            
+            span {
+                @extend %lead;
+                @extend %lead--5;
+            }
+            
+            &.is-active {
+                background-color: $c-primary;
+                
+                [class^="icon-"] {
+                    background-color: transparent;
+                }
+            }
+        }            
+    }
+}

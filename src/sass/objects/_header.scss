@@ -1,0 +1,33 @@
+.o-header {
+    
+    &.aligncenter {
+        max-width: 780px;
+        margin: 0 auto 160px auto;
+    }
+
+    .o-article {
+        font-weight: $light;
+    }
+    
+    .o-cols {
+        &__item {
+            &:last-of-type {
+                padding: 48px 0 0 56px;
+            }
+        }
+    }
+    
+    .o-lead {
+        &--5 {
+           margin-bottom: 32px;
+        }
+        
+        &--2 {
+            margin-bottom: 48px;
+        }
+    }
+
+}
+
+
+

@@ -1,0 +1,41 @@
+
+    <div class="c-content">
+        <div class="o-wrap">
+            <div class="o-section">
+
+                <div class="o-header aligncenter">
+                    <div class="splitting--up js-split" data-splitting>                    
+                        <h5 class="o-lead o-lead--5">Materiały dla</h5>
+                        <h3 class="o-lead o-lead--2">Nowe treści</h3>          
+                    </div>
+
+                    <article class="o-article o-article--big anim anim--up">
+                        <p>Poniżej znajdziesz listę wszystkich materiałów, które opublikowałem na tej stronie. Możesz przeglądać je wg kolejności publikacji albo wybrać jeden z filtrów.</p>
+                    </article>
+                </div>
+                
+                
+                <div class="o-cols" id="content">
+                    <div class="o-cols__item">
+                        
+                        <% include filters %>
+                        
+                    </div>
+                    
+                    <div class="o-cols__item">
+                        
+                        <% include results %>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="c-content__more anim anim--up">
+            <a href="#" class="o-loadmore">
+                <i class="icon-plus"></i>
+                <span>Wczytaj więcej</span>
+            </a>
+        </div>
+    </div>
