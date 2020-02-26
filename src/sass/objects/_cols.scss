@@ -32,6 +32,20 @@
             width: grid(368, $base);
         }
     }
+    
+    &--sidebar {
+        
+        .o-cols__item {
+            
+            &:first-of-type {
+                width: 400px;
+            }
+            
+            &:last-of-type {
+                flex: 1;
+            }
+        }
+    }
 
 /*
     &__item {

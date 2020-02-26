@@ -13,13 +13,6 @@
     }    
 
     .o-cols {
-        
-        &__item {
-            &:first-of-type {
-                width: 400px;
-            }
-        }
-        
         @extend %media-icons;
     }
     
