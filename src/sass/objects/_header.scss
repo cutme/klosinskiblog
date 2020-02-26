@@ -12,13 +12,14 @@
     .o-cols {
         &__item {
             &:last-of-type {
-                padding: 48px 0 0 56px;
+                padding: 48px 0 0 56px;                
             }
         }
     }
     
     .o-lead {
-        &--5 {
+        &--5,
+        &--6 {
            margin-bottom: 32px;
         }
         

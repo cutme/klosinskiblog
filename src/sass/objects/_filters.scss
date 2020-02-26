@@ -16,6 +16,7 @@
             span {
                 @extend %lead;
                 @extend %lead--5;
+                font-weight: $heavy;
             }
             
             &.is-active {

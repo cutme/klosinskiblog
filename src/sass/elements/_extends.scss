@@ -140,13 +140,16 @@
         line-height: 1em;
         font: {
             size: rem(16);
+            weight: $regular;
         }
     }
     
     &--6 {
         line-height: 1em;
+        letter-spacing: 1px;
         font: {
             size: rem(12);
+            weight: $regular;
         }
     }
 }

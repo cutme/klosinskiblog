@@ -1,0 +1,22 @@
+.c-product {
+   
+   .o-article {
+       margin-bottom: 72px;
+   }
+   
+   .o-cols {
+        &__item {
+            &:last-of-type {
+                padding-left: 0;
+            }
+        }
+    }
+    
+   .o-lead {
+        &--2 {
+            line-height: 28px;
+            font-size: rem(26);
+        }
+   }
+    
+}

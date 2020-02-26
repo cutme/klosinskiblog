@@ -1,6 +1,9 @@
 .c-catboxes {
-    padding: 272px 0 0 0;
     overflow: auto;
+    
+    .home & {
+        padding-top: 112px;
+    }
     
     [class^="icon-"] {
         @extend %flex;
@@ -33,7 +36,7 @@
         @extend %flex;
         @extend %flex-wrap;
         width: calc(100% + 32px);
-        margin: 0 -16px 128px -16px;
+        margin: 0 -16px -32px -16px;
     }
     
     &__item {

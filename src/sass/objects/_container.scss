@@ -1,3 +1,6 @@
 .o-container {
-    padding-top: 320px;
+    
+    .home & {
+        padding-top: 320px;
+    }
 }

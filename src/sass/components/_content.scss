@@ -10,19 +10,13 @@
         height: 160px;
         background-color: $c-black-01;
         text-align: center;
-    }
-
-    
+    }    
 
     .o-cols {
         
         &__item {
             &:first-of-type {
                 width: 400px;
-            }
-            
-            &:last-of-type {
-                
             }
         }
         
