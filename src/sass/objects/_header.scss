@@ -2,7 +2,10 @@
     
     &.aligncenter {
         max-width: 780px;
-        margin: 0 auto 160px auto;
+        margin: {
+            left: auto;
+            right: auto;
+        }
     }
 
     .o-article {
@@ -25,10 +28,8 @@
         
         &--2 {
             margin-bottom: 48px;
+            margin-bottom: 32px;
         }
     }
-
 }
-
-
 

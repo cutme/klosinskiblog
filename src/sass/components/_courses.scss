@@ -1,16 +1,28 @@
-.c-courses {
-    padding-top: 160px;
+.c-courses {    
+    &__items {
+        .o-cols {
+            
+            &:first-of-type {
+                border-top: 1px solid $c-gray-01;
+            }
+            
+            &:not(:last-of-type) {
+                border-bottom: 1px solid $c-gray-01;
+            }
+        }
+    }
     
     .o-article {
         margin: 48px 0;
     }
     
     .o-cols {
-        margin: 48px 0 96px 0;
+       // margin: 48px 0 96px 0;
+        padding: 72px 0;
     }
     
     .o-header {
-        margin-bottom: 232px;
+        //margin-bottom: 232px;
     }
 
     .o-lead {

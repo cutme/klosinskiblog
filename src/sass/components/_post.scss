@@ -1,0 +1,72 @@
+.c-post {
+    @extend %clear;
+        
+    &--narrow {
+        width: 750px;
+        margin: 0 auto;
+    }
+    
+    &--narrow2 {
+        width: 600px;
+        margin: 0 auto;
+    }
+    
+    .o-article {
+        
+        h3 {
+            @extend %lead;
+            @extend %lead--3;
+            margin-bottom: 1.6em;
+        }
+        
+        p {
+            line-height: 1.6;
+            font-size: rem(22);
+            margin-bottom: 2em;
+        }
+
+        blockquote {
+            max-width: 750px;
+            margin: 0 auto;
+            text-align: center;
+    
+            p {
+                font-size: rem(30);
+            }
+        }        
+        
+        a {
+            background-color: rgba($c-yellow, .2);
+            border-bottom: 1px solid rgba($c-black-01, .3);
+        }
+        
+        img {
+            &.alignleft {
+                float: left;
+                margin: 0 114px 48px 103px;
+            }
+            
+            &.alignright {
+                float: right;
+                margin: 0 0 48px 103px;
+            }
+        }
+    }
+    
+    
+    //&__content {
+        //width: 750px;
+        //margin: 0 auto;
+        
+        
+    //}
+    
+    //&__header {
+/*
+        .o-header {
+            margin-bottom: 72px;
+        }
+*/
+
+    //}
+}

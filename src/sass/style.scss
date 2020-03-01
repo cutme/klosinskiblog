@@ -5,7 +5,7 @@
 @import 'tools/functions';
 @import 'tools/mixins';
 @import 'tools/flickity';
-//@import 'tools/blazy';
+@import 'tools/blazy';
 //@import 'tools/custom-select';
 //@import 'tools/glide';
 //@import 'tools/glightbox';
@@ -22,7 +22,9 @@
 @import 'elements/typography';
 
 @import 'objects/article';
+@import 'objects/box';
 @import 'objects/btn';
+@import 'objects/catimage';
 @import 'objects/cols';
 @import 'objects/container';
 @import 'objects/filters';
@@ -39,20 +41,29 @@
 
 @import 'components/apla';
 @import 'components/book';
+@import 'components/boxes';
 @import 'components/catboxes';
 @import 'components/cattop';
+@import 'components/clients';
 @import 'components/community';
 @import 'components/content';
 @import 'components/courses';
 @import 'components/footer';
+@import 'components/help';
+@import 'components/important';
 @import 'components/intro';
 @import 'components/join';
+@import 'components/martyna';
 @import 'components/navfooter';
 @import 'components/navmenu';
 @import 'components/newsletter';
 @import 'components/nts';
+@import 'components/numbers';
 @import 'components/popular';
+@import 'components/post';
 @import 'components/product';
+@import 'components/products';
+@import 'components/together';
 @import 'components/top';
 @import 'components/who';
 

@@ -1,0 +1,27 @@
+.c-together {
+    
+    &__photos {
+    
+        .o-cols {
+            
+            &__item {
+                &:first-of-type {
+                    img {
+                        margin-right: 0;
+                        margin-left: auto;
+                    }
+                }
+                
+                img {
+                    &:not(:last-of-type) {
+                        margin-bottom: 32px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .o-section {
+        padding-bottom: 0;
+    }
+}

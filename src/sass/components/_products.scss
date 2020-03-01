@@ -1,0 +1,20 @@
+.c-products {
+    
+    .c-product {
+            
+        .o-cols {
+            border-bottom: 1px solid $c-gray-01;
+            padding-bottom: 112px;
+        }
+        
+        .o-section {
+            padding-bottom: 0;
+        }
+        
+        &:last-of-type {
+            .o-section {
+                padding-top: 112px;
+            }
+        }
+    }
+}

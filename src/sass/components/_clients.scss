@@ -1,0 +1,25 @@
+.c-clients {
+    
+    &__list {
+        @extend %flex;
+        @extend %flex-spacebetween;
+    }
+    
+    .o-header {
+        margin-bottom: 100px;
+    }
+    
+    .o-lead {
+        &--2 {
+            font-size: rem(26);
+        }
+        
+        &--6 {
+            margin-bottom: 20px;
+        }
+    }
+    
+    .o-section {
+        padding: 112px 0 160px 0;
+    }
+}

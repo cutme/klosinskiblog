@@ -59,6 +59,27 @@ html:not(.ie) {
 }
 
 
+// Margins
+
+.bottom--72 {
+    margin-bottom: 72px;
+}
+
+.bottom--112 {
+    margin-bottom: 112px;
+}
+
+.bottom--160{
+    margin-bottom: 160px;
+}
+
+
+.overflow {
+    &--hidden {
+        overflow: hidden;
+    }
+}
+
 
 // Text
 

@@ -10,3 +10,4 @@ require('./js/nav.js');
 require('./js/popular.js');
 require('./js/splitting.js');
 require('./js/carousels.js');
+require('./js/countup.js');

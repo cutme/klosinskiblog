@@ -1,0 +1,22 @@
+.c-important {
+    .o-cols {
+        &__item {
+            &:first-of-type {
+                padding-right: 88px;
+                
+                img {
+                    margin-right: 0;
+                    margin-left: auto;
+                }
+                
+                img {
+                    &:first-of-type {
+                        margin-bottom: 180px;
+                    }
+                }
+            }
+            
+            
+        }
+    }
+}

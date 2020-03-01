@@ -1,0 +1,13 @@
+.c-numbers {
+    overflow: auto;
+    
+    .home & {
+        padding-top: 112px;
+    }
+    
+    .o-lead {
+        &--4 {
+            font-size: rem(26);
+        }
+    }
+}

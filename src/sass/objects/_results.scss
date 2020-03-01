@@ -23,6 +23,10 @@
         margin-bottom: 144px;
         margin-bottom: 72px;
         padding-bottom: 72px;
-        border-bottom: 1px solid $c-gray-01
+        
+        
+        &:not(:last-of-type) {
+            border-bottom: 1px solid $c-gray-01;
+        }
     }
 }
