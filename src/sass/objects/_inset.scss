@@ -1,0 +1,60 @@
+.o-inset {
+    @extend %rel;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin: 160px -50vw;    
+    color: white;
+   
+    &__content {
+        width: $base + px;
+        background-color: $c-black-01;
+        margin: 0 auto;
+        padding: 112px;
+    }
+    
+    &--image {
+        .o-cols {
+            &__item {
+                width: 50%;
+                
+                &:first-of-type {
+                    padding-right: 64px;
+                }
+                
+                &:last-of-type {
+                    padding-left: 16px;
+                }
+            }
+        }
+    }
+    
+    &--video {
+        .o-cols {
+            &__item {
+                &:first-of-type {
+                    flex: 1;
+                    padding-right: 30px;
+                }
+                
+                &:last-of-type {
+                    width: 656px;
+                    margin: 0 0 0 auto;
+                }
+            }
+        }
+    }
+    
+    .o-article {
+        margin-bottom: 2em;
+    }
+    
+    .o-btn {
+        width: 192px;
+    }
+    
+    .o-lead {
+        margin-bottom: .81em;
+        font-size: rem(30);
+    }
+}

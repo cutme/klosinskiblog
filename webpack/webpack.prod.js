@@ -18,6 +18,7 @@ const templateFileMapper = [
     { template: "./src/about.ejs", file: "about.html" },
     { template: "./src/index.ejs", file: "index.html" },
     { template: "./src/category.ejs", file: "category.html" },
+    { template: "./src/single.ejs", file: "single.html" },
 
 ]
 

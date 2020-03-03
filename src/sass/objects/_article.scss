@@ -4,17 +4,24 @@
         line-height: 1.6em;
     }
     
-    &--big {
+    &--huge {
         p {
             line-height: 45px;
             font-size: rem(30);
         }
     }
     
-    &--medium {
+    &--big {
         p {
             line-height: 1.5em;
             font-size: rem(24);
+        }
+    }
+    
+    &--medium {
+        p {
+            line-height: 34px;
+            font-size: rem(22);
         }
     }
 }

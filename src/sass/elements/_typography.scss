@@ -30,9 +30,6 @@ input {
     font-size: #{$base-font-size}px;
 }
 
-strong {
-    font-weight: $bold;
-}
 
 ::selection {
 	background-color: var(--primary-color);
@@ -42,16 +39,26 @@ strong {
 hr {
     @extend %rel;
     width: 100%;
-    height: 72px;
-    margin-bottom: 72px;
     border: none;
 
-    &:after {
-        @extend %abs-pseudo;
-        @extend %abs-xy;
-        width: 8px; height: 8px;
+    &.dot {
+        height: 72px;
+        margin-bottom: 72px;
+        
+        &:after {
+            @extend %abs-pseudo;
+            @extend %abs-xy;
+            width: 8px; height: 8px;
+            background-color: $c-primary;
+            border-radius: 50%;
+        }
+    }
+
+    &.line {
+        height: 32px;
         background-color: $c-primary;
-        border-radius: 50%;
+        margin-top: 112px;
+        margin-bottom: 56px;
     }
 }
 

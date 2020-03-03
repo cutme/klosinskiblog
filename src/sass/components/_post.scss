@@ -2,7 +2,7 @@
     @extend %clear;
         
     &--narrow {
-        width: 750px;
+        width: 710px;
         margin: 0 auto;
     }
     
@@ -12,17 +12,46 @@
     }
     
     .o-article {
+
+        a {
+            &:not(.o-btn) {
+                background-color: rgba($c-yellow, .2);
+                border-bottom: 1px solid rgba($c-black-01, .3);
+            }
+        }
+        
+        h2 {
+            @extend %lead;
+            margin-bottom: 112px;
+            line-height: 42px;
+            font: {
+                size: rem(40);
+                weight: $heavy;
+            }
+        }
         
         h3 {
             @extend %lead;
-            @extend %lead--3;
+            margin-top: 2em;
+            margin-bottom: 1em;
+            line-height: 32px;
+            font: {
+                size: rem(30);
+                weight: $heavy;
+            }
+        }
+        
+        h4 {
+            @extend %lead;
+            @extend %lead--3;   // 22px
             margin-bottom: 1.6em;
         }
         
-        p {
-            line-height: 1.6;
-            font-size: rem(22);
-            margin-bottom: 2em;
+        h5 {
+            @extend %lead;
+            margin-bottom: 32px;
+            line-height: 28px;
+            font-size: rem(16);
         }
 
         blockquote {
@@ -31,15 +60,11 @@
             text-align: center;
     
             p {
+                line-height: 45px;
                 font-size: rem(30);
             }
         }        
-        
-        a {
-            background-color: rgba($c-yellow, .2);
-            border-bottom: 1px solid rgba($c-black-01, .3);
-        }
-        
+                
         img {
             &.alignleft {
                 float: left;
@@ -49,6 +74,100 @@
             &.alignright {
                 float: right;
                 margin: 0 0 48px 103px;
+            }
+        }
+        
+        p {
+            margin-bottom: 1.2em;
+        }
+        
+        strong {
+            @extend %lead;
+            font-weight: $heavy;
+        }
+        
+        .highlight {
+            margin: 72px 0;
+            padding: 40px;
+            
+            &--fill {
+                background-color: $c-gray-01;
+            }
+            
+            &--frame {
+                border: 1px solid $c-gray-01;
+            }
+            
+            p {
+                font-size: rem(20);
+                line-height: 30px;
+                
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+            
+            & + .highlight {
+                margin-top: -42px;
+            }
+        }
+        
+        .wp-block-image {
+            margin: 112px 0;
+        }
+        
+        ul {
+            li {
+                @extend %rel;
+                padding-left: 56px;
+                margin-bottom: 22px;
+                
+                &:before {
+                    @extend %abs-pseudo;
+                    @extend %flex;
+                    @extend %flex-xy;
+                    left: 0;
+                    width: 32px; height: 32px;
+                    background-color: $c-primary;
+                    border-radius: 50%;
+                    font: {
+                        family: $icomoon;
+                        size: rem(13);
+                    }
+                    content: "\e90f";
+                }
+                
+                a {
+                    background-color: transparent !important;
+                    border-bottom: 1px solid $c-gray-04;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    font: {
+                        family: $termina;
+                        weight: $regular;
+                        size: rem(14);
+                    }
+                    
+                    &:hover {
+                        .desktop & {
+                            border-bottom-color: $c-gray-01;
+                        }
+                    }
+                }
+            }
+            
+            &.add-comment {
+                li {
+                    &:last-child {
+                        &:before {
+                            display: none;
+                        }
+                    }
+
+                    &:before {
+                        content: "\e913";
+                    }
+                }
             }
         }
     }
