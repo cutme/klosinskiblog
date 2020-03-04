@@ -1,7 +1,11 @@
 .c-newsletter {
     
     &__img {
-        transform: translateY(50%);
+        transform: translateY(160px);
+        
+        img {
+            max-width: none;
+        }
     }
     
     .o-section {

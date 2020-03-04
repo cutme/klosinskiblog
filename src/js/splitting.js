@@ -4,6 +4,6 @@ import Splitting from "splitting";
 
 document.addEventListener('DOMContentLoaded',function() {
     
-    Splitting();
+    //Splitting();
 
 }, false)
