@@ -7,22 +7,8 @@ document.addEventListener('DOMContentLoaded',function() {
     
     window.communityCarousel = function() {
         
-/*
-        const community = document.getElementById('community');
-
-        const communityflkty = new Flickity( community, {
-            wrapAround: true,
-            dragThreshold: 1,
-            cellAlign: 'center',
-            freeScroll: true,
-            freeScrollFriction: 0.03,
-        });
-        
-*/
-        
-        
         // Play with this value to change the speed
-        let tickerSpeed = 1;
+        let tickerSpeed = .7;
         
         let flickity = null;
         let isPaused = false;

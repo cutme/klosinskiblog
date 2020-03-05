@@ -13,12 +13,12 @@
     
     span {
         @extend %lead;
+        font-size: rem(16);
         color: white;
     }
     
     &:hover {
         [class^="icon-"] {
-            box-shadow: inset 0px 0px 0px 4px white;
             background-color: $c-black-01;
             color: white;
         }

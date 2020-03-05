@@ -1,0 +1,74 @@
+.o-list {
+    a {
+        @extend %rel;
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-bottom: 1px solid $c-gray-04;
+        font: {
+            family: $termina;
+            size: rem(14);
+            weight: $regular;
+        }        
+        
+        &:hover {
+            .desktop & {
+                border-bottom-color: $c-black-01;
+            }
+        }
+    }
+    
+    li {
+        @extend %rel;
+        padding-left: 56px;
+        margin-bottom: 22px;
+
+        &:before {
+            @extend %abs-pseudo;
+            @extend %flex;
+            @extend %flex-xy;
+            left: 0; top: 0;
+            width: 32px; height: 32px;
+            
+            border-radius: 50%;
+            padding-left: 2px;
+            font: {
+                size: rem(12);
+                family: $icomoon;
+            }
+            content: "\e90f";
+        }
+    }
+    
+    &--addcomment {
+        li {
+            &:last-child {
+                
+                &:before {
+                    display: none;
+                }
+            }
+
+            &:before {
+                background-color: $c-primary;
+                content: "\e913";
+            }
+        }
+    }
+    
+    &--grayarrows {
+        li {
+            &:before {
+                background-color: $c-gray-01;
+            }
+        }
+    }
+    
+    &--yellowarrows {
+        li {
+            &:before {
+                background-color: $c-primary;
+            }
+        }
+    }
+}

@@ -193,7 +193,7 @@
     }
 
     &:before {
-        bottom: 0;
+        bottom: -3px;
         height: 1px;
         transform-origin: right center;
         transition: transform;
@@ -207,12 +207,12 @@
     }
 
     &:hover {
-        //.desktop & {
+        .desktop & {
             &:before {                
                 transform: scale3d(1, 1, 1);
                 transform-origin: left center;
             }
-        //}
+        }
     }
 }
 

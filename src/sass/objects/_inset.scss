@@ -51,6 +51,15 @@
     
     .o-btn {
         width: 192px;
+        
+        &--yellow {
+            &:hover {
+                .desktop & {
+                    background-color: white;
+                    color: $c-black-01;
+                }
+            }
+        }
     }
     
     .o-lead {

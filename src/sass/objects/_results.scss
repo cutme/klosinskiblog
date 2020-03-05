@@ -29,4 +29,14 @@
             border-bottom: 1px solid $c-gray-01;
         }
     }
+    
+    .o-lead {
+        a {
+            &:hover {
+                .desktop & {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }

@@ -1,6 +1,7 @@
 .o-filters {
 
     [class^="icon-"] {
+        @extend %anim;
         margin-right: 15px;
     }
 
@@ -19,6 +20,7 @@
                 font-weight: $heavy;
             }
             
+            &:hover,
             &.is-active {
                 background-color: $c-primary;
                 

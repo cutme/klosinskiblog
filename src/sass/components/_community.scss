@@ -19,6 +19,7 @@
         .review {
             font-size: rem(16);
             line-height: 1.5em;
+            color: $c-black-03;
         }
     }
     
@@ -33,6 +34,19 @@
                     padding-top: 112px;
                 }
             }
+        }
+    }
+    
+    .o-lead {
+        &--5 {
+            font-weight: $heavy;
+        }
+    }
+    
+    .o-wrap {
+        padding: {
+            left: 16px;
+            right: 16px;
         }
     }
 

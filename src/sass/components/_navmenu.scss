@@ -58,6 +58,7 @@
 
         a {
             @extend %lead--5;
+            font-weight: $heavy;
             
             &:hover {
                 .desktop & {
@@ -86,6 +87,7 @@
         padding-bottom: 50px;
         
         [class^="icon-"] {
+            @extend %anim;
             @extend %flex;
             @extend %flex-xy;
             border-radius: 50%;
@@ -100,6 +102,15 @@
         a {
             @extend %flex-inline;
             @extend %flex-y;
+            
+            &:hover {
+                .desktop & {
+                    [class^="icon-"] {
+                        background-color: $c-black-01;
+                        color: white;
+                    }
+                }
+            }
         }
         
         span {
@@ -114,6 +125,7 @@
             letter-spacing: 1px;
             font: {
                 size: 12px;
+                weight: $regular;
             }
             
             &:hover {

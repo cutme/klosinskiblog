@@ -1,7 +1,5 @@
 .c-boxes {
-    
-    
-    
+        
     &__items {
         @extend %flex;
         @extend %flex-wrap;
@@ -14,8 +12,12 @@
             width: 56px; height: 56px;
             background-color: $c-primary;
             border-radius: 50%;
-            font-size: rem(20);
+            font-size: rem(24);
             color: $c-black-01;
+        }
+        
+        .icon-watch {
+            font-size: rem(26);
         }
     }
 }

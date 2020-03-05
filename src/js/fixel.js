@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded',function() {
         for (let i = 0; i < el.length; i ++) {
                             
             let stickybit = stickybits(el[i], {
-	            stickyBitStickyOffset: 140
+	            stickyBitStickyOffset: 100
             });
         }
     };
