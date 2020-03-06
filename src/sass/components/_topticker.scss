@@ -1,7 +1,7 @@
 .c-topticker {
     @extend %rel;
     display: block;
-    z-index: 1040;
+    z-index: 160;
     height: 86px;
     background-color: $c-black-01;
     overflow: hidden;
@@ -210,9 +210,11 @@
 	    position: fixed;
 	    left: 0; top: 0; z-index: 1041;
 	    width: 100%;
-	    
 	    transform: translateY(-100%);
-        transition: all .3s;
+	    
+	    .is-loaded & {
+            transition: all .3s;
+        }
 
         &.is-stick {      
             transform: translateY(0%);
