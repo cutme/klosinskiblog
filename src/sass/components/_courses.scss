@@ -14,20 +14,23 @@
     
     .o-article {
         margin: 48px 0;
+
+        @media ( max-width: $smartphone + px ) {
+        	text-align: center;
+        }
     }
     
     .o-cols {
-       // margin: 48px 0 96px 0;
         padding: 72px 0;
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+        	padding: 36px 0;
+        }
     }
     
-    .o-header {
-        //margin-bottom: 232px;
-    }
-
-    .o-lead {
-        &--6 {
-            margin-bottom: 32px;
+    .o-section {
+        .page-about & {
+            padding-top: 0;
         }
     }
 

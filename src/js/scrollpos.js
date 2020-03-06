@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let scroll_pos = window.pageYOffset || window.scrollY,
             out = false;
         
-        const el = document.getElementsByClassName('js-top')[0];
+        const el = document.getElementsByClassName('js-topticker')[0];
         
         let down,
         	lastScrollTop = 0,
@@ -17,14 +17,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (scroll_pos >= 94) {
     	        if (fixed === false) {
-                    el.classList.add('is-fixed');
+                    el.classList.add('is-stick');
                     fixed = true;
                 }
             }
                         
             else {
                 if (fixed === true) {
-    	            el.classList.remove('is-fixed');
+    	            el.classList.remove('is-stick');
     	            fixed = false;
     	        }
             }

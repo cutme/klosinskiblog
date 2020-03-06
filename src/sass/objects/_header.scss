@@ -1,5 +1,9 @@
 .o-header {
     
+    @media ( max-width: $smartphone + px ) {
+    	text-align: center;
+    }
+    
     &.aligncenter {
         max-width: 780px;
         margin: {
@@ -15,7 +19,10 @@
     .o-cols {
         &__item {
             &:last-of-type {
-                padding: 48px 0 0 56px;                
+                
+                @media ( min-width: $smartphone + 1px ) {
+                    padding: 48px 0 0 56px;   
+                }             
             }
         }
     }
@@ -24,10 +31,13 @@
         &--5,
         &--6 {
            margin-bottom: 32px;
+           
+           @media ( max-width: $smartphone + px ) {
+               margin-bottom: 16px;
+           }
         }
         
         &--2 {
-            margin-bottom: 48px;
             margin-bottom: 32px;
         }
     }

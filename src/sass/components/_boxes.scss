@@ -6,6 +6,11 @@
         width: calc(100% + 32px);
         margin: 0 -16px -32px -16px;
         
+        @media ( max-width: $tablet + px ) {
+            width: calc(100% + 16px);
+        	margin: 0 -8px -16px -8px;
+        }
+        
         [class^="icon-"] {
             @extend %flex;
             @extend %flex-xy;
@@ -18,6 +23,21 @@
         
         .icon-watch {
             font-size: rem(26);
+        }
+    }
+    
+    .o-box {
+        width: grid(368, 1200);
+        min-height: 272px;
+        padding: 36px 32px 32px 32px;
+        margin: 0 grid(16, 1200) 32px grid(16, 1200);
+        
+        @media ( max-width: $base + 64px ) {
+        	margin-bottom: base(32);
+        }
+        
+        @media ( max-width: $tablet_portrait + px ) {
+        	height: 232px;
         }
     }
 }

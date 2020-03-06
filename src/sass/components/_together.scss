@@ -16,6 +16,10 @@
                     &:not(:last-of-type) {
                         margin-bottom: 32px;
                     }
+                    
+                    @media ( max-width: $smartphone + px ) {
+                    	margin-bottom: 32px;
+                    }
                 }
             }
         }

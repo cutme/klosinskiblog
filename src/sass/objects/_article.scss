@@ -2,12 +2,32 @@
     
     p {
         line-height: 1.6em;
+        
+        @media ( max-width: $tablet + px ) {
+        	font-size: rem(18);
+        }
     }
     
     &--huge {
         p {
-            line-height: 45px;
+            line-height: 1.5em;
             font-size: rem(30);
+            
+            @media ( max-width: $base + 64px ) {
+                font-size: base(30);
+            }
+            
+            @media ( max-width: $tablet + px ) {
+                font-size: rem(24);
+            }
+            
+            @media ( max-width: $tablet_portrait + px ) {
+                font-size: tablet_portrait(24);
+            }
+            
+            @media ( max-width: $smartphone + px ) {
+                font-size: rem(22);
+            }
         }
     }
     
@@ -15,13 +35,40 @@
         p {
             line-height: 1.5em;
             font-size: rem(24);
+            
+            @media ( max-width: $base + 64px ) {
+                font-size: base(24);
+            }
+            
+            @media ( max-width: $tablet + px ) {
+                font-size: rem(20);
+            }
+            
+            @media ( max-width: $tablet_portrait + px ) {
+                //font-size: tablet_portrait(20);
+            }
+            
+            @media ( max-width: $smartphone + px ) {
+                font-size: rem(18);
+            }
         }
     }
     
     &--medium {
         p {
-            line-height: 34px;
             font-size: rem(22);
+            
+            @media ( max-width: $base + 64px ) {
+                font-size: base(22);
+            }
+            
+            @media ( max-width: $tablet + px ) {
+                font-size: rem(18);
+            }
+            
+            @media ( max-width: $smartphone + px ) {
+                font-size: rem(16);
+            }
         }
     }
 }

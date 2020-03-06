@@ -1,7 +1,7 @@
 .o-list {
     a {
         @extend %rel;
-        display: inline-block;
+        display: inline;
         text-transform: uppercase;
         letter-spacing: 1px;
         border-bottom: 1px solid $c-gray-04;
@@ -9,7 +9,11 @@
             family: $termina;
             size: rem(14);
             weight: $regular;
-        }        
+        }
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+        	font-size: rem(12);
+        }
         
         &:hover {
             .desktop & {
@@ -22,6 +26,10 @@
         @extend %rel;
         padding-left: 56px;
         margin-bottom: 22px;
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+            margin-bottom: 12px;
+        }
 
         &:before {
             @extend %abs-pseudo;

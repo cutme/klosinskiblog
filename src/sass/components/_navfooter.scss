@@ -4,10 +4,21 @@
     ul {
         @extend %flex;
         @extend %flex-x;
+        @extend %flex-wrap;
         margin-bottom: 72px;
-
+        
+        @media ( max-width: $smartphone + px ) {
+            display: block;
+        }
+        
         li {
             padding: 0 16px;
+            
+            &:not(:last-child) {
+                @media ( max-width: $smartphone + px ) {
+                    margin-bottom: 16px;
+                }
+            }
 
             a {
                 @extend %lead;
@@ -17,7 +28,9 @@
                 
                 &:hover {
                     .desktop & {
-                        transform: translate3d(0, -5px, 0);
+                        @media ( min-width: $smartphone + 1px ) {
+                            transform: translate3d(0, -5px, 0);
+                        }
                     }
                 }
             }

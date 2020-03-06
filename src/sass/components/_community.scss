@@ -5,6 +5,10 @@
         margin-bottom: 32px;
         padding: 32px 32px 48px 32px;
         
+        @media ( max-width: $base + px ) {
+        	margin-bottom: base(32);
+        }
+        
         .author {
             @extend %flex;
             @extend %flex-y;
@@ -24,7 +28,7 @@
     }
     
     .o-header {
-        margin-bottom: 120px;
+       // margin-bottom: 120px;
     }
     
     .o-cols--3 {

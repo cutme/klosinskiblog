@@ -2,12 +2,21 @@
 
     dl {
         @extend %flex;
+        
+        @media ( max-width: $tablet_portrait + px ) {
+        	display: block;
+        	
+        }
     }
     
     dt {
         @extend %flex;
         width: 200px;
         
+        @media ( max-width: $tablet_portrait + px ) {
+            margin-bottom: 16px;
+        }
+                
         [class^="icon-"] {
             
             margin-right: 8px;
@@ -15,7 +24,8 @@
     }
     
     dd {
-        width: 570px;
+        flex: 1;
+        //width: 570px;
     }
     
     &__item {
@@ -24,6 +34,15 @@
         margin-bottom: 72px;
         padding-bottom: 72px;
         
+        @media ( max-width: $base + 64px ) {
+            padding-bottom: base(72);
+            margin-bottom: base(72);
+        }
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+        	margin-bottom: 36px;
+        	padding-bottom: 36px;
+        }
         
         &:not(:last-of-type) {
             border-bottom: 1px solid $c-gray-01;

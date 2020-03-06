@@ -5,7 +5,11 @@
     }
     
     .o-section {
-        padding-bottom: 0;
+        
+        @media ( min-width: $smartphone + 1px ) {
+        	padding-bottom: 0;
+        }
+        
     }
 
     &__grid {
@@ -15,6 +19,16 @@
         margin: -32px 0 -160px 0;
         
         .col {
+            
+            
+            &:first-of-type {
+                 width: grid(299, 600);
+            }
+            
+            &:last-of-type {
+                width: grid(263, 600);
+            }
+            
             img {
                 &:not(:last-of-type) {
                     margin-bottom: 32px;
@@ -23,12 +37,37 @@
         }
     }
     
+    .o-btn {
+        &:hover {
+            .desktop & {
+                background-color: white;
+                color: $c-black-01;
+            }
+        }
+    }
+    
     .o-cols {
+        
+        @media ( max-width: $smartphone + px ) {
+        	display: block;
+        	text-align: center;
+        }
         
         &__item {
             &:first-of-type {
-                padding-right: 160px;
+                
+                @media ( min-width: $smartphone + 1px ) {
+                    padding-right: grid(160);
+                }
             }
+        }
+    }
+    
+    .o-more {
+        margin-bottom: 72px;
+        
+        @media ( max-width: $smartphone + px ) {
+        	margin-bottom: 112px;
         }
     }
 }

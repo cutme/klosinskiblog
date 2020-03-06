@@ -2,7 +2,23 @@
     //padding-top: 270px;
     padding-top: 176px;
     
+    @media ( max-width: $base + 64px ) {
+        padding-top: base(176);
+    }
+    
+    @media ( max-width: $tablet_portrait + px ) {
+    	padding-top: 200px;
+    }
+    
     .home & {
         padding-top: 330px;
+        
+        @media ( max-width: $base + 64px ) {
+            padding-top: base(330);
+        }
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+        	padding-top: 130px;
+        }
     }
 }

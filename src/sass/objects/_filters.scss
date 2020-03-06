@@ -2,7 +2,10 @@
 
     [class^="icon-"] {
         @extend %anim;
-        margin-right: 15px;
+        
+        @media ( min-width: $smartphone + 1px ) {
+            margin-right: 15px;
+        }
     }
 
     li {
@@ -14,10 +17,18 @@
             padding: 0 32px 0 8px;
             margin: 0 0 8px -8px;
             
+            @media ( max-width: $smartphone + px ) {
+                padding: 0 8px;
+            }
+            
             span {
                 @extend %lead;
                 @extend %lead--5;
                 font-weight: $heavy;
+                
+                @media ( max-width: $smartphone + px ) {
+                    display: none;
+                }
             }
             
             &:hover,
@@ -29,5 +40,13 @@
                 }
             }
         }            
+    }
+    
+    .o-lead {
+        &--6 {
+            @media ( max-width: $smartphone + px ) {
+                opacity: 0;
+            }
+        }
     }
 }

@@ -109,29 +109,89 @@
 
     &--1 {
         line-height: 1em;
-        font: {
-            size: rem(60);
+        font-size: rem(60);
+        
+        @media ( max-width: $base + 64px ) {
+        	font-size: base(60);
+        }
+        
+        @media ( max-width: $tablet + px ) {
+            font-size: rem(50);
+        }
+        
+        @media ( max-width: $tablet_portrait + px ) {
+            font-size: tablet_portrait(50);
+        }
+        
+        @media ( max-width: $smartphone + px ) {
+            font-size: rem(42);
         }
     }
 
     &--2 {
-        line-height: 56px;
-        font: {
-            size: rem(48);
+        line-height: 1.16em;
+        font-size: rem(48);
+        
+        @media ( max-width: $base + 64px ) {
+        	font-size: base(48);
+        }
+        
+        @media ( max-width: $tablet + px ) {
+            font-size: rem(40);
+        }
+        
+        @media ( max-width: $tablet_portrait + px ) {
+            font-size: tablet_portrait(40);
+        }
+        
+        @media ( max-width: $smartphone + px ) {
+            font-size: rem(34);
+        }
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+            font-size: rem(28);
         }
     }
     
     &--3 {
         line-height: 28px;
-        font: {
-            size: rem(22);
+        font-size: rem(22);
+        
+        @media ( max-width: $base + 64px ) {
+        	//font-size: base(22);
+        }
+        
+        @media ( max-width: $tablet + px ) {
+           // font-size: rem(40);
+        }
+        
+        @media ( max-width: $tablet_portrait + px ) {
+            //font-size: tablet_portrait(40);
+        }
+        
+        @media ( max-width: $smartphone + px ) {
+            font-size: rem(20);
         }
     }
     
     &--4 {
         line-height: 20px;
-        font: {
-            size: rem(20);
+        font-size: rem(20);
+        
+        @media ( max-width: $base + 64px ) {
+        	font-size: base(20);
+        }
+        
+        @media ( max-width: $tablet + px ) {
+            font-size: rem(17);
+        }
+        
+        @media ( max-width: $tablet_portrait + px ) {
+            font-size: tablet_portrait(17);
+        }
+        
+        @media ( max-width: $smartphone + px ) {
+            font-size: rem(14);
         }
     }
     
@@ -141,6 +201,10 @@
         font: {
             size: rem(16);
             weight: $regular;
+        }
+        
+        @media ( max-width: $tablet_portrait + px ) {
+        	font-size: rem(14);
         }
     }
     

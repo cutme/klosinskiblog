@@ -43,7 +43,18 @@ hr {
 
     &.dot {
         height: 72px;
-        margin-bottom: 72px;
+        margin: {
+            top: 72px;
+            bottom: 72px;
+        }
+        
+        @media ( max-width: $base + 64px ) {
+            height: base(72);
+            margin: {
+                top: base(72);
+                bottom: base(72);
+            }
+        }
         
         &:after {
             @extend %abs-pseudo;
@@ -57,8 +68,26 @@ hr {
     &.line {
         height: 32px;
         background-color: $c-primary;
-        margin-top: 112px;
-        margin-bottom: 56px;
+        margin: {
+            top: 112px;
+            bottom: 56px;
+        }
+        
+        @media ( max-width: $base + px ) {
+            height: base(32);
+        	margin: {
+                top: base(112);
+                bottom: base(112);
+            }
+        }
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+        	height: 12px;
+        	margin: {
+            	top: 48px;
+            	bottom: 48px;
+        	}
+        }
     }
 }
 

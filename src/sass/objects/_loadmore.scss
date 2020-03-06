@@ -9,12 +9,20 @@
         background-color: $c-primary;
         margin: 0 auto 38px auto;
         color: $c-gray-02;
+        
+        @media ( max-width: $smartphone + px ) {
+            margin-bottom: 22px;
+        }
     }
     
     span {
         @extend %lead;
         font-size: rem(16);
         color: white;
+        
+        @media ( max-width: $smartphone + px ) {
+            font-size: rem(14);
+        }
     }
     
     &:hover {

@@ -36,12 +36,14 @@
 @import 'objects/lists';
 @import 'objects/loadmore';
 @import 'objects/logo';
+@import 'objects/more';
 @import 'objects/results';
 @import 'objects/section';
 @import 'objects/social';
 @import 'objects/video';
 @import 'objects/wrap';
 
+@import 'components/afterintro';
 @import 'components/apla';
 @import 'components/book';
 @import 'components/boxes';
@@ -58,7 +60,7 @@
 @import 'components/intro';
 @import 'components/join';
 @import 'components/martyna';
-@import 'components/moureaboutme';
+@import 'components/moreaboutme';
 @import 'components/navfooter';
 @import 'components/navmenu';
 @import 'components/newsletter';
@@ -71,9 +73,10 @@
 @import 'components/single';
 @import 'components/together';
 @import 'components/top';
+@import 'components/topticker';
 @import 'components/who';
 
-@import 'trumps/splitting';
+//@import 'trumps/splitting';
 @import 'trumps/trumps';
 
 

@@ -13,10 +13,19 @@
     .o-logo {
         @extend %abs;
         @extend %abs-xy;
+        
+        @media ( max-width: $tablet_portrait + px ) {
+        	width: 143px;
+            height: 23px;
+        }
     }
     
     .o-social {
         margin: 0 0 0 auto;
+        
+        @media ( max-width: $smartphone + px ) {
+        	display: none;
+        }
     }
     
     .o-wrap {

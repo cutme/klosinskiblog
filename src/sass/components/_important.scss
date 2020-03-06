@@ -2,21 +2,25 @@
     .o-cols {
         &__item {
             &:first-of-type {
-                padding-right: 88px;
                 
-                img {
-                    margin-right: 0;
-                    margin-left: auto;
+                @media ( min-width: $smartphone + 1px ) {
+                    padding-right: 88px;
                 }
                 
                 img {
-                    &:first-of-type {
-                        margin-bottom: 180px;
+                    margin: 0 auto 48px auto;
+
+                    @media ( min-width: $smartphone + 1px ) {
+                    	margin-right: 0;
+                        margin-left: auto;
+                        
+                        &:first-of-type {
+                            margin-bottom: 180px;
+                        }
                     }
+                    
                 }
             }
-            
-            
         }
     }
 }

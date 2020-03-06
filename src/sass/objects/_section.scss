@@ -1,3 +1,11 @@
 .o-section {
     padding: 160px 0;
+    
+    @media ( max-width: $base + 64px ) {
+    	padding: base(160) 0;
+    }
+    
+    @media ( max-width: $smartphone_portrait + 1px ) {
+    	padding: 80px 0;
+    }
 }

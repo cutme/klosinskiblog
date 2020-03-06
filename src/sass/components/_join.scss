@@ -5,14 +5,33 @@
     
     .o-cols {
         margin-top: 112px;
+        @extend %flex-wrap;
+
         
         &__item {
+            @extend %flex;
+            @extend %flex-column;
+            @extend %flex-spacebetween;    
             width: calc(100% / 4);
             padding-right: 48px;
+            
+            @media ( max-width: $tablet + px ) {
+            	width: 50%;
+            	
+            	&:not(:nth-last-child(2)) {
+                	&:not(:nth-last-child(1)) {
+                    	margin-bottom: 72px;
+                    }
+            	}
+            }
         }
         
         .o-article {
             margin-bottom: 32px;
+            
+            p {
+                
+            }
         }
         
         .o-lead {
@@ -22,8 +41,16 @@
         }
     }
     
+    .o-btn {
+        align-self: baseline;
+        min-width: 150px;
+    }
+    
     .o-header {
         //margin-bottom: 112px;
     }
     
+    .o-section {
+        padding-top: 160px;
+    }
 }

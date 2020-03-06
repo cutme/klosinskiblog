@@ -1,11 +1,11 @@
-.c-nts {
+.c-moreaboutme {
     
     &__img {
-        margin-bottom: -160px;
-        @media ( min-width: $smartphone + 1px ) {
-            margin-bottom: -112px;
-        }
-        
+        margin-bottom: -112px;
+    }
+    
+    .o-btn {
+        width: 192px;
     }
     
     .o-cols {
@@ -20,18 +20,17 @@
     
     .o-more {
         margin-bottom: 48px;
-        
-        @media ( max-width: $smartphone + px ) {
-            margin-bottom: 72px;
-        }
     }
     
     .o-section {
-        margin-bottom: 160px;
+        margin-bottom: 72px;
         
         @media ( min-width: $smartphone + 1px ) {
-            padding: 112px 0 0 0;
+            padding: 112px 0 0 0;        	
         }
+
+        
+        
     }
     
     .title {

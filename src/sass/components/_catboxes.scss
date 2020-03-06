@@ -4,4 +4,21 @@
     .home & {
         padding-top: 112px;
     }
+    
+    .o-box {
+        
+        @media ( max-width: $base + 64px ) {
+        	min-height: base(272);
+        }
+        
+        @media ( max-width: $tablet + px ) {
+        	width: calc(50% -16px);
+        	margin: 0 8px 16px 8px;
+        }
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+            padding: 32px 6px;
+            text-align: center;
+        }
+    }
 }

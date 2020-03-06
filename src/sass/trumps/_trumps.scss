@@ -63,14 +63,28 @@ html:not(.ie) {
 
 .bottom--72 {
     margin-bottom: 72px;
+    
+    
 }
 
 .bottom--112 {
     margin-bottom: 112px;
+    
+    @media ( max-width: $smartphone + px ) {
+    	margin-bottom: 56px;
+    }
 }
 
-.bottom--160{
+.bottom--160 {
     margin-bottom: 160px;
+    
+    @media ( max-width: $base + 64px ) {
+        margin-bottom: base(160);
+    }
+    
+    @media ( max-width: $smartphone_portrait + px ) {
+        margin-bottom: 80px;
+    }
 }
 
 
@@ -115,3 +129,20 @@ html:not(.ie) {
 .bg-yellow {
     background-color: $c-primary;
 }
+
+
+// Mobile / desktop
+/*
+
+.mobile {
+    .desktop & {
+        display: none;
+    }
+}
+
+.desktop {
+    .mobile & {
+        display: none;
+    }
+}
+*/

@@ -20,9 +20,13 @@
     .title {
         @extend %abs;
         left: 60px; top: 80px;
+        
+        @media ( max-width: $smartphone + px ) {
+        	left: 30px;
+        }
     }
     
-    @media screen and ( max-width: $smartphone + px ) {
+    @media ( max-width: $smartphone + px ) {
         width: 100%;
     }
     
@@ -76,7 +80,7 @@
         width: calc(100% + 60px);
         padding: 170px 120px 60px 60px;
         
-        @media screen and ( max-width: $smartphone + px ) {
+        @media ( max-width: $smartphone + px ) {
             width: calc(100% + 30px);
             padding: 150px 60px 60px 30px;
         }
@@ -140,7 +144,7 @@
         @extend %abs;
         right: 120px; top: 60px;
         
-        @media screen and ( max-width: $smartphone + px ) {
+        @media ( max-width: $smartphone + px ) {
             right: 60px;
         }
         

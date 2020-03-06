@@ -5,11 +5,8 @@
     @extend %rel;
     width: 368px;
     background-color: white;
-    min-height: 272px;
-    padding: 36px 32px 32px 32px;
-    margin: 0 16px 32px 16px;
     overflow: hidden;
-    
+        
     &:before {
         @extend %abs-pseudo; z-index: -1;
         @extend %anim;
@@ -19,25 +16,43 @@
         transform: translate3d(0, 100%, 0);
         opacity: 0;
     }
-    
-    
-    
+        
     &__footer {
         @extend %flex;
         @extend %flex-y;
+
+        @media ( max-width: $smartphone_portrait + px ) {
+        	display: block;
+        }
         
         [class^="icon-"] { 
             margin: 0 0 0 auto;
+            
+            @media ( max-width: $smartphone_portrait + px ) {
+                margin: 16px auto 0 auto;
+            }
         }
 
         .see {
             @extend %lead;
             @extend %lead--6;
             
-            &:before {
-                margin-right: 8px;
+            &:before, &:after {
+                
                 letter-spacing: -2px;
                 content: '——';
+            }
+            
+            &:before {
+                margin-right: 8px;
+            }
+            
+            &:after {
+                margin-left: 8px;
+                
+                @media ( min-width: $smartphone_portrait + 1px ) {
+                	display: none;
+                }
             }
         }
     }

@@ -5,25 +5,56 @@
     right: 50%;
     margin: 160px -50vw;    
     color: white;
+    
+    @media ( max-width: $base + px ) {
+        margin: {
+            top: base(160);
+            bottom: base(160);
+        }
+    }
    
     &__content {
-        width: $base + px;
         background-color: $c-black-01;
         margin: 0 auto;
         padding: 112px;
+        
+        @media ( min-width: $base + 1px ) {
+        	width: $base + px;
+        }
+        
+        @media ( max-width: $base + px ) {
+        	padding: base(112);
+        }
+        
+        @media ( max-width: $tablet_portrait + px ) {
+        	padding: {
+            	left: 32px;
+            	right: 32px;
+        	}
+        }
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+            padding: {
+            	left: 15px;
+            	right: 15px;
+        	}
+        }
     }
     
     &--image {
         .o-cols {
             &__item {
-                width: 50%;
                 
-                &:first-of-type {
-                    padding-right: 64px;
-                }
-                
-                &:last-of-type {
-                    padding-left: 16px;
+                @media ( min-width: $tablet_portrait + 1px ) {
+                    width: 50%;
+                    
+                    &:first-of-type {
+                        padding-right: 64px;
+                    }
+                    
+                    &:last-of-type {
+                        padding-left: 16px;
+                    }
                 }
             }
         }
@@ -32,14 +63,18 @@
     &--video {
         .o-cols {
             &__item {
-                &:first-of-type {
-                    flex: 1;
-                    padding-right: 30px;
-                }
                 
-                &:last-of-type {
-                    width: 656px;
-                    margin: 0 0 0 auto;
+                @media ( min-width: $tablet_portrait + 1px ) {
+
+                    &:first-of-type {                
+                        flex: 1;
+                        padding-right: 30px;
+                    }
+                
+                    &:last-of-type {
+                        width: grid(656);
+                        margin: 0 0 0 auto;
+                    }
                 }
             }
         }
@@ -47,6 +82,10 @@
     
     .o-article {
         margin-bottom: 2em;
+        
+        p {
+            font-size: rem(20);
+        }
     }
     
     .o-btn {
@@ -62,8 +101,24 @@
         }
     }
     
+    .o-cols {
+        @media ( max-width: $tablet_portrait + px ) {
+        	display: block;
+        }
+        
+        &__item {
+            &:first-of-type {
+                @media ( max-width: $tablet_portrait + px ) {
+                    margin-bottom: 72px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
     .o-lead {
         margin-bottom: .81em;
+        line-height: 1.1em;
         font-size: rem(30);
     }
 }
