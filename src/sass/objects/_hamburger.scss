@@ -41,15 +41,17 @@
     
     
     &:hover {
-        background-color: $c-black-01;
-        border-color: transparent;
-        color: white;
-        
-        
-        .navbar--base & {
-            .category & {
-                color: $c-black-01;
-                background-color: white;
+        .desktop & {
+            background-color: $c-black-01;
+            border-color: transparent;
+            color: white;
+            
+            
+            .navbar--base & {
+                .category & {
+                    color: $c-black-01;
+                    background-color: white;
+                }
             }
         }
 /*

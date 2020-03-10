@@ -5,6 +5,10 @@
     &__contact {
         .o-lead {
             margin-bottom: 3.3em;
+            
+            @media ( max-width: $small + px ) {
+            	margin-bottom: 2em;
+            }
         }
     }
     

@@ -25,6 +25,12 @@
         @extend %lead--6;   // 12
     }
 
+
+    br {
+        @media ( max-width: $small + px ) {
+        	display: none;
+        }
+    }
 }
 
 

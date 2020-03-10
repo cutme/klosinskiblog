@@ -1,6 +1,6 @@
 body {
 	@include antialias;
-	line-height: 1.6;
+	line-height: 1.5;
 	text-rendering: optimizeSpeed;
 	font: {
 		family: $text;
@@ -8,6 +8,14 @@ body {
 		weight: $light;
 	}
 	color: $c-black-01;
+
+	@media ( max-width: $tablet + px ) {
+    	font-size: rem(18);
+    }
+    
+    @media ( max-width: $smartphone + px ) {
+        font-size: rem(16);
+    }
 }
 
 a {

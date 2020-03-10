@@ -64,7 +64,9 @@ html:not(.ie) {
 .bottom--72 {
     margin-bottom: 72px;
     
-    
+    @media ( max-width: $small + px ) {
+    	margin-bottom: 48px;
+    }
 }
 
 .bottom--112 {
@@ -82,8 +84,8 @@ html:not(.ie) {
         margin-bottom: base(160);
     }
     
-    @media ( max-width: $smartphone_portrait + px ) {
-        margin-bottom: 80px;
+    @media ( max-width: $smartphone + px ) {
+        margin-bottom: 72px;
     }
 }
 

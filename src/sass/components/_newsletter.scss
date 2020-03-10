@@ -2,6 +2,10 @@
     @media ( max-width: $smartphone + px ) {
         margin-bottom: 160px;
     }
+    
+    @media ( max-width: $smartphone_portrait + px ) {
+    	margin-bottom: 80px;
+    }
 
     &__img {
         transform: translateY(160px);
@@ -19,6 +23,11 @@
     }
     
     &__form {
+        
+        @media ( max-width: $smartphone + px ) {
+        	padding-top: 48px;
+        }
+        
         input[type=text],
         input[type=email] {
             background-color: transparent;
@@ -34,6 +43,10 @@
         
         .o-btn {
             margin-top: 40px;
+            
+            @media ( max-width: $smartphone_portrait + px ) {
+                width: 100%;
+            }
         }
         
         .o-cols {

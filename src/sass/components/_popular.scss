@@ -4,10 +4,13 @@
     &__box {
         background-color: white;
         border-radius: 5px;
-        //padding: 28px 40px;
         
         &:not(:last-of-type) {
             margin-bottom: 32px;
+            
+            @media ( max-width: $small + px ) {
+                margin-bottom: 18px;
+            }
         }
         
         &.is-active {
@@ -46,7 +49,6 @@
                 
                 @media ( max-width: $tablet_portrait + px ) {
                     width: 100%;
-             //       flex: 100%;
                 }
             }
             
@@ -79,6 +81,10 @@
         padding: 32px 40px 20px 40px;        
         overflow: hidden;
         pointer-events: none;
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+        	padding: 24px;
+        }
 
         li {
             margin-bottom: 22px;
@@ -92,6 +98,10 @@
         padding: 28px 40px;
         border-bottom: 1px solid $c-gray-01;
         cursor: pointer;
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+        	padding: 24px;
+        }
         
         .o-lead {
             &--5 {
@@ -108,6 +118,7 @@
             border-radius: 50%;
             padding-left: 2px;
             font-size: rem(18);
+            flex-shrink: 0;
             color: black;
         }
         

@@ -5,6 +5,11 @@
         .o-cols {
             border-bottom: 1px solid $c-gray-01;
             padding-bottom: 112px;
+            
+            @media ( max-width: $tablet + px ) {
+            	padding-bottom: 48px;
+            }
+
         }
         
         .o-section {
@@ -14,6 +19,14 @@
         &:last-of-type {
             .o-section {
                 padding-top: 112px;
+                
+                @media ( max-width: $tablet + px ) {
+                	padding-top: 72px;
+                }
+                
+                @media ( max-width: $smartphone_portrait + px ) {
+                	padding-top: 48px;
+                }
             }
         }
     }

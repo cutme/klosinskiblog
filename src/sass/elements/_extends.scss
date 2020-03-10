@@ -126,6 +126,10 @@
         @media ( max-width: $smartphone + px ) {
             font-size: rem(42);
         }
+        
+        @media ( max-width: $small + px ) {
+            font-size: rem(38);
+        }
     }
 
     &--2 {
@@ -149,12 +153,12 @@
         }
         
         @media ( max-width: $smartphone_portrait + px ) {
-            font-size: rem(28);
+            font-size: rem(26);
         }
     }
     
     &--3 {
-        line-height: 28px;
+        line-height: 1.3em;
         font-size: rem(22);
         
         @media ( max-width: $base + 64px ) {
@@ -171,6 +175,10 @@
         
         @media ( max-width: $smartphone + px ) {
             font-size: rem(20);
+        }
+        
+        @media ( max-width: $small + px ) {
+            font-size: rem(18);
         }
     }
     

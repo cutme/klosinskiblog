@@ -5,23 +5,24 @@ const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 document.addEventListener('DOMContentLoaded',function() {
     
     const el = document.getElementsByClassName('js-open-navmenu');
+    
 
     const init = function() {
         
         const apla = document.getElementsByClassName('js-apla')[0],
               navmenu = document.getElementsByClassName('js-navmenu')[0],
+              navmenu_content = document.getElementsByClassName('js-navmenu_content')[0];
               close = document.getElementsByClassName('js-close-navmenu')[0];
               
         const checkClass = function(e) {
+
             if( !e.target.parentNode.classList.contains('js-navmenu"') ) {
                 closeMenu();
             } 
         }
     
         const closeMenu = function() {
-            
-            enableBodyScroll('navmenu');
-            
+            enableBodyScroll(navmenu_content);
             apla.classList.remove('is-visible');
             navmenu.classList.remove('is-visible');            
             document.removeEventListener('click', checkClass);
@@ -29,7 +30,7 @@ document.addEventListener('DOMContentLoaded',function() {
         
         const openMenu = function(e) {	        
 
-            disableBodyScroll('navmenu');
+            disableBodyScroll(navmenu_content);
             apla.classList.add('is-visible');
             navmenu.classList.add('is-visible');
             
@@ -42,7 +43,7 @@ document.addEventListener('DOMContentLoaded',function() {
     
         close.addEventListener('click', closeMenu);
 
-        for (let i =0; i<el.length; i++){
+        for (let i = 0; i < el.length; i++){
             el[i].addEventListener('click', openMenu);
             
         }

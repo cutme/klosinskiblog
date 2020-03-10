@@ -4,16 +4,18 @@
     }
     
     .o-cols {
-        margin-top: 112px;
         @extend %flex-wrap;
-
         
         &__item {
             @extend %flex;
             @extend %flex-column;
             @extend %flex-spacebetween;    
             width: calc(100% / 4);
-            padding-right: 48px;
+            
+            @media ( min-width: $small + 1px ) {
+                padding-right: 48px;            	
+            }
+
             
             @media ( max-width: $tablet + px ) {
             	width: 50%;
@@ -24,14 +26,20 @@
                     }
             	}
             }
+            
+            @media ( max-width: $small + px ) {
+            	width: 100%;
+            	text-align: center;
+                
+                &:not(:last-of-type) {
+                    margin-bottom: 72px;
+                }
+                
+            }
         }
         
         .o-article {
             margin-bottom: 32px;
-            
-            p {
-                
-            }
         }
         
         .o-lead {
@@ -44,6 +52,10 @@
     .o-btn {
         align-self: baseline;
         min-width: 150px;
+        
+        @media ( max-width: $small + px ) {
+            margin: 0 auto;
+        }
     }
     
     .o-header {

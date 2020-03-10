@@ -71,7 +71,8 @@
         h4 {
             @extend %lead;
             @extend %lead--3;   // 22px
-            margin-bottom: 1.6em;
+            margin-bottom: 1.8em;
+            margin-top: 1.8em;
         }
         
         h5 {
@@ -117,7 +118,12 @@
                 }
                 
                 @media ( max-width: $smartphone + px ) {
+                    padding: 0 15px;
                     font-size: rem(22);
+                }
+                
+                @media ( max-width: $small + px ) {
+                    
                 }
             }
         }        
@@ -213,6 +219,10 @@
         
         .wp-block-image {
             margin: 112px 0;
+            
+            @media ( max-width: $smartphone + px ) {
+            	margin: 48px 0;
+            }
         }
     }
 }

@@ -67,20 +67,30 @@
         @media ( max-width: $tablet_portrait + px ) {
             max-width: 100%;
         }
-        
 
         @media ( max-width: 480px ) {
             margin-left: 32px;
+        }
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+            margin-left: 15px;
+            margin-right: 15px;
         }
         
         p {
             @extend %lead;
             @extend %lead--4;
             margin: 0;
+            line-height: 1.4em;
             font-size: 12px;
             
             @media ( max-width: 480px ) {
                 font-size: 12px;
+            }
+            
+            @media ( max-width: $small + px ) {
+
+            	font-size: rem(10);
             }
         }
     }
@@ -238,6 +248,7 @@
 		        
 		        @media ( max-width: $smartphone_portrait + px ) {
 		        	padding-left: 80px;
+                    margin-right: 15px;
 		        }
 	        }
         }

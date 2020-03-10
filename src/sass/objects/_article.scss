@@ -28,6 +28,10 @@
             @media ( max-width: $smartphone + px ) {
                 font-size: rem(22);
             }
+            
+            @media ( max-width: $small + px ) {
+                font-size: rem(20);
+            }
         }
     }
     

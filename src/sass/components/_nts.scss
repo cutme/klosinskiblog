@@ -32,6 +32,10 @@
         @media ( min-width: $smartphone + 1px ) {
             padding: 112px 0 0 0;
         }
+        
+        @media ( max-width: $smartphone + px ) {
+        	margin-bottom: 112px;
+        }
     }
     
     .title {
