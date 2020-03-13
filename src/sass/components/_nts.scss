@@ -2,10 +2,16 @@
     
     &__img {
         margin-bottom: -160px;
+        
         @media ( min-width: $smartphone + 1px ) {
             margin-bottom: -112px;
         }
         
+        img {
+            @media ( min-width: $smartphone + 1px ) and ( max-width: $tablet + px ) {
+                max-width: none;
+            }
+        }
     }
     
     .o-cols {

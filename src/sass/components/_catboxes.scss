@@ -47,13 +47,15 @@
         	margin: 0 8px 16px 8px;
         }
         
+/*
         @media ( min-width: $small + 1px ) and ( max-width: $tablet_portrait + px ) {
         	height: 232px;
         	padding: 32px 6px;
             text-align: center;
         }
+*/
         
-        @media ( max-width: $small + px ) {
+        @media ( max-width: $smartphone + px ) {
             width: 100%;
         	height: auto;
             margin: 0 0 16px 0;

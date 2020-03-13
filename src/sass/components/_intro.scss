@@ -23,6 +23,7 @@
             
             &:last-of-type {
                 margin-bottom: -160px;
+                padding-left: 56px;
                 
                 @media ( max-width: $base + 64px ) {
                 	padding: base(56) 0 0 base(56);

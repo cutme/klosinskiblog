@@ -7,7 +7,12 @@
     padding-top: 64px;
     
     .home & {
-        padding-top: 112px;
+//        padding-top: 112px;
+        padding-top: 155px;
+        
+        @media ( max-width: $smartphone + px ) {
+        	padding-top: 112px;
+        }
     }
     
     .o-logo {

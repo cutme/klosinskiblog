@@ -10,9 +10,15 @@
        	   width: grid(519, 570);
        }
        
-       @media ( max-width: $smartphone + px ) {
-       	   //margin-bottom: 72px;
-       }
+       img {
+       
+           @media ( max-width: $smartphone + px ) {
+                margin: {
+                    left: auto;
+                    right: auto;
+                }
+           }
+        }
    }
    
    .o-article {

@@ -10,9 +10,22 @@
     &__img {
         transform: translateY(160px);
         
+        @media ( max-width: $tablet + px ) {
+        	transform: translateY( tablet(160) );
+        }
+        
+        @media ( min-width: $smartphone + 1px ) and ( max-width: $tablet_portrait + px ) {
+        	transform: translateY(0);
+        	margin-bottom: 160px;
+        }
+        
+        @media ( max-width: $smartphone + px ) {
+        	transform: translateY(160px);
+        }
+        
         img {
             
-            @media ( min-width: $smartphone + 1px ) {
+            @media ( min-width: $tablet + 1px ) {
                 max-width: none;	
             }
         }

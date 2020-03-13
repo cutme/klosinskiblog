@@ -64,6 +64,14 @@ hr {
             }
         }
         
+        @media ( max-width: $smartphone + px ) {
+        	height: 32px;
+        	margin: {
+            	top: 48px;
+            	bottom: 48px;
+        	}
+        }
+        
         &:after {
             @extend %abs-pseudo;
             @extend %abs-xy;
@@ -90,7 +98,7 @@ hr {
         }
         
         @media ( max-width: $smartphone_portrait + px ) {
-        	height: 12px;
+        	height: 18px;
         	margin: {
             	top: 48px;
             	bottom: 48px;

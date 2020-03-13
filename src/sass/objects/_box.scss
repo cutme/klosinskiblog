@@ -20,24 +20,22 @@
     &__footer {
         @extend %flex;
         @extend %flex-y;
-
-        @media ( min-width: $small + 1px ) and  ( max-width: $smartphone_portrait + px ) {
-        	display: block;
-        }
         
         [class^="icon-"] { 
             margin: 0 0 0 auto;
             
-            @media ( min-width: $small + 1px ) and ( max-width: $smartphone_portrait + px ) {
+            /*
+@media ( min-width: $small + 1px ) and ( max-width: $smartphone_portrait + px ) {
                 margin: 16px auto 0 auto;
             }
+*/
         }
 
         .see {
             @extend %lead;
             @extend %lead--6;
             
-            &:before, &:after {
+            &:before {
                 
                 letter-spacing: -2px;
                 content: '——';
@@ -45,15 +43,7 @@
             
             &:before {
                 margin-right: 8px;
-            }
-            
-            &:after {
-                margin-left: 8px;
-                
-                @media ( min-width: $small + 1px ) and ( min-width: $smartphone_portrait + 1px ) {
-                	display: none;
-                }
-            }
+            }           
         }
     }
 }

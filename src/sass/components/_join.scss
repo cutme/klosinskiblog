@@ -9,14 +9,13 @@
         &__item {
             @extend %flex;
             @extend %flex-column;
-            @extend %flex-spacebetween;    
+            @extend %flex-spacebetween;
             width: calc(100% / 4);
             
-            @media ( min-width: $small + 1px ) {
+            @media ( min-width: $smartphone + 1px ) {
                 padding-right: 48px;            	
             }
 
-            
             @media ( max-width: $tablet + px ) {
             	width: 50%;
             	
@@ -27,7 +26,7 @@
             	}
             }
             
-            @media ( max-width: $small + px ) {
+            @media ( max-width: $smartphone + px ) {
             	width: 100%;
             	text-align: center;
                 
@@ -53,7 +52,7 @@
         align-self: baseline;
         min-width: 150px;
         
-        @media ( max-width: $small + px ) {
+        @media ( max-width: $smartphone + px ) {
             margin: 0 auto;
         }
     }

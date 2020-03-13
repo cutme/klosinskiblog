@@ -21,8 +21,33 @@
             color: $c-black-01;
         }
         
+        .icon-box {
+            padding-left: 2px;
+        }
+        
+        .icon-smile {
+            padding-left: 3px;
+            font-size: rem(22);
+        }
+        
         .icon-watch {
-            font-size: rem(26);
+            padding-left: 3px;
+            font-size: rem(28);
+        }
+        
+        .icon-briefcase {
+            padding-left: 4px;
+            font-size: rem(20);
+        }
+        
+        .icon-sunrise {
+            padding-left: 2px;
+            font-size: rem(23);
+        }
+        
+        .icon-user-check {
+            padding-left: 10px;
+            font-size: rem(22);
         }
         
         .o-box {

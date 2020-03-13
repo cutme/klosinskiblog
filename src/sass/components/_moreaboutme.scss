@@ -2,6 +2,12 @@
     
     &__img {
         margin-bottom: -112px;
+        
+        img {
+            @media ( min-width: $smartphone + 1px ) {
+	            max-width: none;
+            }
+        }
     }
     
     .o-btn {

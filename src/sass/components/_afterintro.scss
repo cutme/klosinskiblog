@@ -1,3 +1,15 @@
 .c-afterintro {
-    padding-top: 320px;
+    padding-top: 230px;
+    
+    @media ( max-width: $tablet + px ) {
+    	padding-top: tablet(230);
+    }
+    
+    @media ( max-width: $tablet + px ) {
+        padding-top: 112px;
+    }
+    
+    @media ( max-width: $smartphone + px ) {
+        padding-top: 320px;
+    }
 }

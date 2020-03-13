@@ -27,16 +27,13 @@
         }
         
         @media ( max-width: $tablet_portrait + px ) {
-        	padding: {
-            	left: 32px;
-            	right: 32px;
-        	}
+            padding: 72px 32px;
         }
         
         @media ( max-width: $smartphone_portrait + px ) {
             padding: {
-            	left: 15px;
-            	right: 15px;
+            	left: 20px;
+            	right: 20px;
         	}
         }
     }

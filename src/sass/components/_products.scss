@@ -1,5 +1,9 @@
 .c-products {
     
+    @media ( max-width: $small + px ) {
+        margin-bottom: 72px;
+    }
+    
     .c-product {
             
         .o-cols {

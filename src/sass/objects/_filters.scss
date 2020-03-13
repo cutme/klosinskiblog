@@ -7,8 +7,26 @@
             margin-right: 15px;
         }
     }
+    
+    @media ( max-width: $tablet_portrait + px ) {
+        display: flex;
+        height: 100%;
+    	justify-content: center;
+        align-items: center;
+    }
+    
+    ul {
+        @media ( max-width: $tablet_portrait + px ) {
+            display: flex;
+        }
+    }
 
     li {
+        
+        @media ( min-width: $smartphone + 1px )  and ( max-width: $tablet_portrait + px ) {
+            margin: 0 5px;   
+        }
+
         a {
             @extend %flex-inline;
             @extend %flex-xy;
@@ -17,7 +35,14 @@
             padding: 0 32px 0 8px;
             margin: 0 0 8px -8px;
             
+            @media ( max-width: $tablet_portrait + px ) {
+                margin: 0;
+            	padding: 0 16px 0 8px;
+            }
+
+            
             @media ( max-width: $smartphone + px ) {
+                height: 48px;
                 padding: 0 8px;
             }
             
@@ -25,6 +50,7 @@
                 @extend %lead;
                 @extend %lead--5;
                 font-weight: $heavy;
+                
                 
                 @media ( max-width: $smartphone + px ) {
                     display: none;
@@ -44,8 +70,9 @@
     
     .o-lead {
         &--6 {
-            @media ( max-width: $smartphone + px ) {
-                opacity: 0;
+            @media ( max-width: $tablet_portrait + px ) {
+                display: none;
+                //opacity: 0;
             }
         }
     }

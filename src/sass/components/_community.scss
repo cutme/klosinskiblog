@@ -30,23 +30,35 @@
     .o-cols--3 {
         .o-cols {
             &__item {
+
                 &:nth-of-type(odd) {
-                    padding-top: 112px;
+                    
+                    @media ( min-width: $tablet + 1px ) {
+                        padding-top: 112px;	
+                    }
+                }
+                
+                @media ( max-width: $tablet + px ) {
+                	display: flex;
+                	width: 50%;
+                }
+                
+                .o-box {
+                    @media ( max-width: $tablet + px ) {
+                        margin: 0 8px;
+                    }
                 }
             }
         }
     }
-    
-    .o-lead {
-        &--5 {
-            font-weight: $heavy;
-        }
-    }
-    
+
     .o-wrap {
-        padding: {
-            left: 16px;
-            right: 16px;
+
+        @media ( min-width: $tablet + 1px ) {
+            padding: {
+                left: 16px;
+                right: 16px;
+            }
         }
     }
 

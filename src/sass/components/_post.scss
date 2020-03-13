@@ -133,7 +133,7 @@
             
             &.alignleft {
                 
-                @media ( min-width: $smartphone + 1px ) {
+                @media ( min-width: $tablet_portrait + 1px ) {
                     float: left;
                 	margin: 0 grid(114) 48px grid(103);
                 }
@@ -141,7 +141,7 @@
             
             &.alignright {
                 
-                @media ( min-width: $smartphone + 1px ) {
+                @media ( min-width: $tablet_portrait + 1px ) {
                     float: right;
                     margin: 0 0 48px 103px;
                 }
@@ -223,6 +223,18 @@
             @media ( max-width: $smartphone + px ) {
             	margin: 48px 0;
             }
+        }
+    }
+    
+    &--1 {
+        @media ( max-width: $tablet_portrait + px ) {
+        	.o-cols {
+            	display: block;
+            	
+            	&__item {
+                	width: 100%;
+            	}
+        	}
         }
     }
 }
